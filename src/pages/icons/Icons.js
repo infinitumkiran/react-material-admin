@@ -2965,7 +2965,7 @@ export default function IconsPage () {
               xs={12}
             >
               <Icons.Dashboard />
-              <Typography className={classes.materialIconText}>
+              <Typography >
                 Dashboard
               </Typography>
             </Grid>

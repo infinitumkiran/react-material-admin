@@ -24,6 +24,7 @@ import classNames from "classnames";
 import { Badge, Typography } from "../Wrappers";
 import Notification from "../Notification";
 import UserAvatar from "../UserAvatar";
+import { red } from "@material-ui/core/colors";
 
 const messages = [
   {
@@ -247,15 +248,15 @@ const Header = ({ classes, isSidebarOpened, toggleSidebar, ...props }) => (
       >
         <div className={classes.profileMenuUser}>
           <Typography variant="h4" weight="medium">
-            John Smith
+            Kiran
           </Typography>
           <Typography
             className={classes.profileMenuLink}
             component="a"
             color="primary"
-            href="https://flatlogic.com"
+            href="https://infinitumkiran.github.io/portfoliowebsite/"
           >
-            Flalogic.com
+            My portfolio
           </Typography>
         </div>
         <MenuItem

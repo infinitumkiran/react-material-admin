@@ -56,7 +56,7 @@ export default function BigStat(props) {
             {total.percent.value}%
           </Typography>
         </div>
-        <BarChart width={150} height={70} data={getRandomData()}>
+        <BarChart width={150} height={70} >
           <Bar
             dataKey="value"
             fill={theme.palette[color].main}
@@ -110,12 +110,4 @@ export default function BigStat(props) {
       </div>
     </Widget>
   );
-}
-
-// #######################################################################
-
-function getRandomData() {
-  return Array(7)
-    .fill()
-    .map(() => ({ value: Math.floor(Math.random() * 10) + 1 }));
 }

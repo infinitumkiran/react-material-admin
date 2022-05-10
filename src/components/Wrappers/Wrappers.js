@@ -76,7 +76,7 @@ function Button({ children, color, className, ...props }) {
     contained: {
       backgroundColor: getColor(color, theme),
       boxShadow: theme.customShadows.widget,
-      color: `${color ? "white" : theme.palette.text.primary} !important`,
+      color: `${color ? "black" : theme.palette.text.primary} !important`,
       "&:hover": {
         backgroundColor: getColor(color, theme, "light"),
         boxShadow: theme.customShadows.widgetWide,

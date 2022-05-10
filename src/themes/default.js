@@ -1,10 +1,10 @@
 import tinycolor from "tinycolor2";
 
-const primary = "#536DFE";
+const primary = "#8D021F";
 const secondary = "#FF5C93";
 const warning = "#FFC260";
 const success = "#3CD4A0";
-const info = "#9013FE";
+const info = "#000000";
 
 const lightenRate = 7.5;
 const darkenRate = 15;
@@ -58,13 +58,13 @@ const defaultTheme = {
         .toHexString(),
     },
     text: {
-      primary: "#4A4A4A",
-      secondary: "#6E6E6E",
+      primary: "#000000",
+      secondary: "#000000",
       hint: "#B9B9B9",
     },
     background: {
-      default: "#F6F7FF",
-      light: "#F3F5FF",
+      default: "#FFFFFF",
+      light: "#FFFFFF",
     },
   },
   customShadows: {
@@ -78,7 +78,7 @@ const defaultTheme = {
   overrides: {
     MuiBackdrop: {
       root: {
-        backgroundColor: "#4A4A4A1A",
+        backgroundColor: "#FFFFFF",
       },
     },
     MuiMenu: {
@@ -89,15 +89,15 @@ const defaultTheme = {
     },
     MuiSelect: {
       icon: {
-        color: "#B9B9B9",
+        color: "#000000",
       },
     },
     MuiListItem: {
       root: {
         "&$selected": {
-          backgroundColor: "#F3F5FF !important",
+          backgroundColor: "#FFFFFF",
           "&:focus": {
-            backgroundColor: "#F3F5FF",
+            backgroundColor: "#FFFFFF",
           },
         },
       },
@@ -109,7 +109,7 @@ const defaultTheme = {
     },
     MuiTouchRipple: {
       child: {
-        backgroundColor: "white",
+        backgroundColor: "black",
       },
     },
     MuiTableRow: {

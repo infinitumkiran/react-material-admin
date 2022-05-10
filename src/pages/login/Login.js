@@ -33,7 +33,7 @@ function Login(props) {
   var [error, setError] = useState(null);
   var [activeTabId, setActiveTabId] = useState(0);
   var [nameValue, setNameValue] = useState("");
-  var [loginValue, setLoginValue] = useState("admin@flatlogic.com");
+  var [loginValue, setLoginValue] = useState("admin@kiran");
   var [passwordValue, setPasswordValue] = useState("password");
 
   return (
@@ -245,7 +245,7 @@ function Login(props) {
           )}
         </div>
         <Typography color="primary" className={classes.copyright}>
-        © 2014-{new Date().getFullYear()} <a style={{ textDecoration: 'none', color: 'inherit' }} href="https://flatlogic.com" rel="noopener noreferrer" target="_blank">Flatlogic</a>, LLC. All rights reserved.
+        © 2022-{new Date().getFullYear()} <a style={{ textDecoration: 'none', color: 'inherit' }} href="https://infinitumkiran.github.io/portfoliowebsite/" rel="noopener noreferrer" target="_blank">Kiran</a> All rights reserved.
         </Typography>
       </div>
     </Grid>

@@ -1,126 +1,99 @@
-import React from "react";
-import { Grid } from "@material-ui/core";
+// import React,{useState} from "react";
+// import { Grid } from "@material-ui/core";
+import {
+  ResponsiveContainer,
+  ComposedChart,
+  AreaChart,
+  LineChart,
+  Line,
+  Area,
+  PieChart,
+  Pie,
+  Cell,
+  YAxis,
+  XAxis,
+} from "recharts";
+// import axios from 'axios';
 
-// styles
-import useStyles from "./styles";
+// // styles
+// import useStyles from "./styles";
 
-// components
-import PageTitle from "../../components/PageTitle";
-import Widget from "../../components/Widget";
-import { Typography } from "../../components/Wrappers";
+// // components
+// import Widget from "../../components/Widget";
+// import { Typography } from "../../components/Wrappers";
 
 export default function TypographyPage() {
-  var classes = useStyles();
+//   var classes = useStyles();
+//   const [file, setFile] = useState();
+//   const [fileName, setFileName] = useState("");
 
+//   const saveFile = (e) => {
+//     setFile(e.target.files[0]);
+//     setFileName(e.target.files[0].name);
+//   };
+
+
+  
+//   return (
+    
+//     <>
+
+//         <div className="TypographyPage">
+//           <input type="file" onChange={saveFile} />
+//           <button onClick={uploadFile}>Upload</button>
+//         </div>
+//     </>
+//   );
+// }
+
+// import React,{useState} from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
+// import Button from '@material-ui/core/Button';
+// import IconButton from '@material-ui/core/IconButton';
+// import PhotoCamera from '@material-ui/icons/PhotoCamera';
+ 
+// const uploadFile = async (e) => {
+//   const formData = new FormData();
+//   try {
+//     const res = await axios.post(
+//       "http://127.0.0.1:5000",
+//       formData
+//     );
+//     console.log(res);
+//   } catch (ex) {
+//     console.log(ex);
+//   }
+// };
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     '& > *': {
+//       margin: theme.spacing(1),
+//     },
+//   },
+//   input: {
+//     display: 'none',
+//   },
+// }));
+
+// export default function UploadButtons() {
+//   const classes = useStyles();
+//   const [files,setFile]=useState([]);
+//   const handlerFile=(e)=>{    
+//     console.log(e.target.files);
+    
+//     let allfiles=[]
+//    for(let i=0;i<e.target.files.length;i++){
+//     allfiles.push(e.target.files[i]);
+//    }
+//     if(allfiles.length>0){
+//       setFile(allfiles);  
+//     }
+//   };
   return (
     <>
-      <PageTitle title="Typography" />
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
-          <Widget title="Headings" disableWidgetMenu>
-            <div className={classes.dashedBorder}>
-              <Typography variant="h1" className={classes.text}>
-                h1. Heading
-              </Typography>
-              <Typography variant="h2" className={classes.text}>
-                h2. Heading
-              </Typography>
-              <Typography variant="h3" className={classes.text}>
-                h3. Heading
-              </Typography>
-              <Typography variant="h4" className={classes.text}>
-                h4. Heading
-              </Typography>
-              <Typography variant="h5" className={classes.text}>
-                h5. Heading
-              </Typography>
-              <Typography variant="h6">h6. Heading</Typography>
-            </div>
-          </Widget>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Widget title="Typography Colors" disableWidgetMenu>
-            <div className={classes.dashedBorder}>
-              <Typography variant="h1" color="primary" className={classes.text}>
-                h1. Heading
-              </Typography>
-              <Typography variant="h2" color="success" className={classes.text}>
-                h2. Heading
-              </Typography>
-              <Typography
-                variant="h3"
-                color="secondary"
-                className={classes.text}
-              >
-                h3. Heading
-              </Typography>
-              <Typography variant="h4" color="warning" className={classes.text}>
-                h4. Heading
-              </Typography>
-              <Typography
-                variant="h5"
-                color="primary"
-                colorBrightness="light"
-                className={classes.text}
-              >
-                h5. Heading
-              </Typography>
-              <Typography variant="h6" color="info">
-                h6. Heading
-              </Typography>
-            </div>
-          </Widget>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Widget title="Basic Text Settings" disableWidgetMenu>
-            <div className={classes.dashedBorder}>
-              <Typography className={classes.text}>Basic text</Typography>
-              <Typography className={classes.text} weight="light">
-                Basic light text
-              </Typography>
-              <Typography className={classes.text} weight="medium">
-                Basic medium text
-              </Typography>
-              <Typography className={classes.text} weight="bold">
-                Basic bold text
-              </Typography>
-              <Typography className={classes.text}>
-                BASIC UPPERCASE TEXT
-              </Typography>
-              <Typography className={classes.text}>
-                basic lowercase text
-              </Typography>
-              <Typography className={classes.text}>
-                Basic Capitalized Text
-              </Typography>
-              <Typography>
-                <i>Basic Cursive Text</i>
-              </Typography>
-            </div>
-          </Widget>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Widget title="Text Size" disableWidgetMenu>
-            <div className={classes.dashedBorder}>
-              <Typography className={classes.text} size="sm">
-                Heading Typography SM Font Size
-              </Typography>
-              <Typography className={classes.text}>
-                Heading Typography Regular Font Size
-              </Typography>
-              <Typography className={classes.text} size="md">
-                Heading Typography MD Font Size
-              </Typography>
-              <Typography className={classes.text} size="xl">
-                Heading Typography XL Font Size
-              </Typography>
-              <Typography className={classes.text} size="xxl">
-                Heading Typography XXL Font Size
-              </Typography>
-            </div>
-          </Widget>
-        </Grid>
-      </Grid>
-    </>
+    <ResponsiveContainer width="100%" minWidth={500} height={750}>
+              <iframe src="http://127.0.0.1:5005/" />
+            </ResponsiveContainer>
+          </>
   );
-}
+  }

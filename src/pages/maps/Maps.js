@@ -5,7 +5,19 @@ import {
   GoogleMap,
   Marker,
 } from "react-google-maps";
-
+import {
+  ResponsiveContainer,
+  ComposedChart,
+  AreaChart,
+  LineChart,
+  Line,
+  Area,
+  PieChart,
+  Pie,
+  Cell,
+  YAxis,
+  XAxis,
+} from "recharts";
 // styles
 import useStyles from "./styles";
 
@@ -27,13 +39,8 @@ export default function Maps() {
   var classes = useStyles();
 
   return (
-    <div className={classes.mapContainer}>
-      <BasicMap
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg"
-        loadingElement={<div style={{ height: "inherit", width: "inherit" }} />}
-        containerElement={<div style={{ height: "100%" }} />}
-        mapElement={<div style={{ height: "100%" }} />}
-      />
-    </div>
+    <ResponsiveContainer width="100%" minWidth={500} height={750}>
+              <iframe src="http://127.0.0.1:5501/" />
+            </ResponsiveContainer>
   );
 }

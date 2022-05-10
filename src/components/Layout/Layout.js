@@ -54,7 +54,7 @@ function Layout(props) {
             <div className={classes.fakeToolbar} />
             <Switch>
               <Route path="/app/dashboard" component={Dashboard} />
-              <Route path="/app/typography" component={Typography} />
+              <Route path="/app/prediction" component={Typography} />
               <Route path="/app/tables" component={Tables} />
               <Route path="/app/notifications" component={Notifications} />
               <Route
@@ -63,7 +63,6 @@ function Layout(props) {
                 render={() => <Redirect to="/app/ui/icons" />}
               />
               <Route path="/app/ui/maps" component={Maps} />
-              <Route path="/app/ui/icons" component={Icons} />
               <Route path="/app/ui/charts" component={Charts} />
             </Switch>
             <Box
@@ -76,23 +75,23 @@ function Layout(props) {
               <div>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/'}
+                  href={'https://infinitumkiran.github.io/portfoliowebsite/'}
                   target={'_blank'}
                   className={classes.link}
                 >
-                  Flatlogic
+                  Kiran
                 </Link>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/about'}
+                  href={'https://infinitumkiran.github.io/portfoliowebsite/'}
                   target={'_blank'}
                   className={classes.link}
                 >
-                  About Us
+                  About Me
                 </Link>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/blog'}
+                  href={'https://infinitumkiran.github.io/portfoliowebsite/'}
                   target={'_blank'}
                   className={classes.link}
                 >
@@ -101,7 +100,7 @@ function Layout(props) {
               </div>
               <div>
                 <Link
-                  href={'https://www.facebook.com/flatlogic'}
+                  href={'https://infinitumkiran.github.io/portfoliowebsite/'}
                   target={'_blank'}
                 >
                   <IconButton aria-label="facebook">
@@ -113,7 +112,7 @@ function Layout(props) {
                   </IconButton>
                 </Link>
                 <Link
-                  href={'https://twitter.com/flatlogic'}
+                  href={'https://infinitumkiran.github.io/portfoliowebsite/'}
                   target={'_blank'}
                 >
                   <IconButton aria-label="twitter">
@@ -125,7 +124,7 @@ function Layout(props) {
                   </IconButton>
                 </Link>
                 <Link
-                  href={'https://github.com/flatlogic'}
+                  href={'https://github.com/infinitumkiran'}
                   target={'_blank'}
                 >
                   <IconButton

@@ -67,10 +67,10 @@ const lineChartData = [
 ];
 
 const pieChartData = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
+  { name: "Day 1", value: 400 },
+  { name: "Day 2", value: 300 },
+  { name: "Day 3", value: 300 },
+  { name: "Day 4", value: 200 },
 ];
 
 export default function Charts(props) {
@@ -143,8 +143,8 @@ export default function Charts(props) {
                   activeIndex={activeIndex}
                   activeShape={renderActiveShape}
                   data={pieChartData}
-                  innerRadius={60}
-                  outerRadius={80}
+                  innerRadius={20}
+                  outerRadius={60}
                   fill={theme.palette.primary.main}
                   dataKey="value"
                   onMouseEnter={(e, id) => setActiveIndexId(id)}
